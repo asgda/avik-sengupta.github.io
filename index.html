@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avik Sengupta | Computational Biologist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-light: #7f8c8d;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.7; 
+            color: var(--primary-color);
+        }
+        .hero { 
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: white;
+            padding: 120px 0;
+        }
+        .section-padding { padding: 80px 0; }
+        .cv-download { background: var(--accent-color); color: white; border: none; }
+        .publication-card { transition: all 0.3s ease; }
+        .publication-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .skill-tag { background: #ecf0f1; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; margin: 2px; }
+        @media (max-width: 768px) { .hero { padding: 80px 0; } }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home" style="color: var(--primary-color);">
+                <i class="fas fa-dna me-2"></i>Avik Sengupta
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Computational Biologist</h1>
+                    <p class="lead mb-5" style="font-size: 1.3em;">
+                        Multi-omics integration & machine learning for cancer research<br>
+                        <small class="opacity-75">PhD Candidate | IIT Hyderabad</small>
+                    </p>
+                    <a href="#cv" class="btn btn-lg cv-download px-5 py-3 me-3">
+                        <i class="fas fa-file-pdf me-2"></i>Download CV
+                    </a>
+                    <a href="mailto:bo22resch01004@iith.ac.in" class="btn btn-outline-light btn-lg px-5 py-3">
+                        <i class="fas fa-envelope me-2"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-5">Research Focus</h2>
+                    <p class="lead mb-4">
+                        During my PhD at IIT Hyderabad, I develop computational approaches to colorectal cancer theranostics, 
+                        integrating transcriptomics, genomics, Hi-C, and clinical data from TCGA/DepMap cohorts. 
+                        My work spans drug repurposing, prognostic modeling, and multi-omics subtyping.
+                    </p>
+                    <div class="row g-4 mt-5">
+                        <div class="col-md-4">
+                            <div class="text-center p-4">
+                                <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                                <h5>9+ Peer-reviewed Publications</h5>
+                                <p class="text-muted">ACS Omega, Briefings in Bioinformatics, eLife</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center p-4">
+                                <i class="fas fa-server fa-3x text-primary mb-3"></i>
+                                <h5>SLURM HPC Pipelines</h5>
+                                <p class="text-muted">End-to-end bioinformatics workflows</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center p-4">
+                                <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                <h5>Collaborative Research</h5>
+                                <p class="text-muted">Multi-institutional cancer projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Highlights -->
+    <section id="research" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-5">PhD Thesis</h2>
+                    <h5 class="fw-bold mb-3">Computer-aided designing of colorectal cancer theranostics</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>SVM/QSAR models for drug repurposing (*ACS Omega* 2024)</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>ML-guided prognostic risk models (*Briefings in Bioinformatics* 2025)</li>
+                        <li class="mb-3"><i class="fas fa-check-circle text-success me-2"></i>Multi-omics molecular subtyping (ongoing)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-5">Technical Expertise</h2>
+                    <div class="mb-4">
+                        <h6>SLURM HPC Pipelines</h6>
+                        <p>Bulk RNA-seq (STAR→DESeq2), Hi-C (HiC-Pro/Juicer), genomics (VEP/GATK)</p>
+                    </div>
+                    <div>
+                        <h6>Key Datasets</h6>
+                        <p>TCGA, DepMap (CCLE/CRISPR), GDSC2, GEO, cBioPortal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">Bioinformatics & Omics</h5>
+                    <span class="skill-tag">Bulk RNA-seq (STAR, DESeq2)</span>
+                    <span class="skill-tag">Hi-C (HiC-Pro, Juicer)</span>
+                    <span class="skill-tag">Genomics (VEP, GATK)</span>
+                    <span class="skill-tag">Survival Analysis</span>
+                    <span class="skill-tag">Multi-omics Integration</span>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">Machine Learning & Programming</h5>
+                    <span class="skill-tag">Python (scikit-learn, XGBoost)</span>
+                    <span class="skill-tag">R (Seurat, survival)</span>
+                    <span class="skill-tag">QSAR Modeling</span>
+                    <span class="skill-tag">Graph Neural Networks</span>
+                    <span class="skill-tag">SLURM HPC</span>
+                    <span class="skill-tag">Bash/Conda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section-padding">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Selected Publications</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="publication-card card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Support Vector Machine-Based Prediction Models for Drug Repurposing</h6>
+                            <p class="small text-muted mb-2">ACS Omega, 2024</p>
+                            <p class="mb-2">First-author paper developing QSAR models for CRC drug discovery</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">DOI: 10.1021/acsomega.4c01195</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="publication-card card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Non-apoptotic Regulated Cell Death Prognostic Model</h6>
+                            <p class="small text-muted mb-2">Briefings in Bioinformatics, 2025</p>
+                            <p class="mb-2">Two-step ML framework for CRC risk stratification</p>
+                            <a href="#" class="btn btn-sm btn-outline-primary">DOI: 10.1093/bib/bbaf639</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#cv" class="btn btn-primary btn-lg">View Complete Publication List →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV & Contact -->
+    <section id="cv" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-5">Ready to Connect?</h2>
+                    <p class="lead mb-5">
+                        Available for postdoctoral opportunities in computational cancer biology.
+                    </p>
+                    <a href="#" class="btn btn-lg cv-download px-5 py-3 me-3 mb-3 mb-md-0">
+                        <i class="fas fa-file-pdf me-2"></i>Download Full CV
+                    </a>
+                    <div class="mt-5">
+                        <a href="mailto:bo22resch01004@iith.ac.in" class="me-4"><i class="fas fa-envelope fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/avik-sengupta-a62487145/" class="me-4"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <p>&copy; 2026 Avik Sengupta. Built with ❤️ for computational biology.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
